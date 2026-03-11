@@ -2,18 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Forms Exercise One - labels and more</title>
- <link rel="stylesheet"  href="css/form.css" />  
-
- 
- 
-
-
-   
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
+<title>2020 Proposal Form - Speaker Submission</title>
+ <link rel="stylesheet"  href="css/form.css" />
 </head>
 
 <body>
@@ -23,53 +13,55 @@
 
 <div id="formcol1">
 
-
- <h2>Proposal Form</h2>
- <h3>Speaker Info</h3>
+ <h1>2020 Proposal Form</h1>
+ <p>Fields marked with an asterisk (*) are required.</p>
+ <fieldset><legend>Speaker Info</legend>
  <ul>
 	<li>
-        <span>*First Name:</span>
-        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" title="Required field" />
+        <label for="fstspkr1">First Name: *</label>
+        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" />
     </li>
 
 
- 	<li><span>*Last Name:</span>
-        <input id="lstname1" name="lstname1" type="text" class="reqfield" title="Required field" />
+ 	<li><label for="lstname1">Last Name: *</label>
+        <input id="lstname1" name="lstname1" type="text" class="reqfield" />
 </li>
 <li>
-	<span>Title:</span>
+	<label for="spkrtitle1">Title:</label>
 	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
 </li>
 <li>
-	<span>Company:</span>
+	<label for="company1">Company:</label>
 	<input id="company1" name="company1" type="text" />
 </li>
 <li>
-	<span>Department:</span>
+	<label for="department1">Department:</label>
 	<input id="department1" name="department1" type="text"  />
 </li>
 <li>
-	<span>*Address:</span>
-	<input id="address1" class="reqfield" name="address1" type="text" title="Required field" />
+	<label for="address1">Address: *</label>
+	<input id="address1" class="reqfield" name="address1" type="text" />
 </li>
 </ul>
+</fieldset>
 
 </div> <!-- end of formcol1 div -->
     <div id="multchoice">
-    
-    <h3>Type of Presentation</h3>
-    
-        <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> </span>
-           <span>Lab:</span>	<span><input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
-           
- 	<p class="submit-button">    
+
+    <fieldset><legend>Type of Presentation</legend>
+
+        <p><span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /><label for="TypeofPres_lec">Lecture</label></span>
+           <span><input value="2" id="TypeofPres_lab" name="p-type" type="radio" /><label for="TypeofPres_lab">Lab</label></span></p>
+    </fieldset>
+
+ 	<p class="submit-button">
 <input type="submit" value="Submit your proposal" /></p>
     </div> <!-- end of multchoice div -->
 
 
 </form>
 
-	
+
 </div> <!-- end wrapper div -->
 </body>
 </html>

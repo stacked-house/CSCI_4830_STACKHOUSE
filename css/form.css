@@ -1,0 +1,113 @@
+@charset "ISO-8859-1";
+
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	
+	float:left;	
+	width: 100%;
+}
+
+div#formcol1 label {
+	float:left;
+	width:8.3em;
+	text-align:left;
+	display:block;
+	padding-right:.3em;	
+	background:#E0E0DD;
+	clear:right;
+	}
+	
+
+div#formcol1 ul li {
+	list-style-type:none;
+	margin-left:-2em;
+	margin-bottom:.4em;
+	}
+
+	
+div#formcol1 input {
+	
+	margin-left:1.5em;
+	text-align:left;
+	display:block;
+	clear:right;
+	background-color:#F4F4F4;
+	}
+
+
+/* div for radio buttons and check boxes */
+
+#multchoice {
+	clear:left;
+	margin-left:1%;	
+}
+
+#multchoice input, #multchoice span {
+	float:left;
+}
+
+#multchoice span {	
+	margin: 0 .3em;
+}
+
+.submit-button {
+	margin:2em 0;
+	float:right;
+	width:70%;
+}
+
+
+		
+
+/* end of form css */
+
+/* Align and size labels so input fields line up neatly */
+label {
+  margin-right: .3em;
+  width: 6.3em;
+  display: inline-block;
+  text-align: right;
+}
+
+/* Remove bullet points from the Speaker Info list */
+#formcol1 li {
+  list-style: none;
+}
+
+/* Highlight focused and active form fields for keyboard accessibility */
+select:focus, select:active, input:focus, input:active,
+input:focus + label, input:active + label,
+label[for]:focus, label[for]:active {
+  color: #FFF !important;
+  background-color: #BB3D2F !important;
+}
+
+/* Yellow background on required fields to visually distinguish them */
+#formcol1 input.reqfield {
+  background: #FF9;
+}
+
+/* Tighten spacing between radio button options */
+#multchoice span {
+  margin-right: 1em;
+}
+
+/* Add padding and a light background to the form for readability */
+form {
+  padding: 1.5em;
+  background-color: #fafafa;
+  max-width: 600px;
+}
+
+/* Add spacing between each list item so label/field pairs breathe */
+#formcol1 li {
+  margin-bottom: 0.6em;
+}
