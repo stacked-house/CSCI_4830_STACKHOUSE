@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="accessibility, universal design, alternate format, web design, disability, higher education, ADA, Section 508, accommodations, assistive technology, DOJ, Department of Justice, WAI">
+  <title>AHG Presenter Proposal Form 2020 | Accessing Higher Ground Conference</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700" type="text/css" media="all">
+  <link rel="stylesheet" href="css/ahgformstyle2020after.css" type="text/css" media="screen">
+</head>
+<body>
+
+<header role="banner">
+  <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
+  <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+</header>
+
+<main role="main">
+
+  <p class="instructions">Fields marked with <span class="required-marker" aria-hidden="true">*</span><span class="sr-only">an asterisk</span> are required. Phone numbers should be entered in the format 555-555-5555.</p>
+
+  <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020" novalidate>
+
+    <h2 class="outline4">Speaker Information</h2>
+
+    <p><strong>1st Presenter <span class="required-marker" aria-hidden="true">*</span></strong></p>
+
+    <ul>
+      <li>
+        <label for="fstspkr1">First Name:</label>
+        <input id="fstspkr1" name="fstspkr1" type="text" required aria-required="true" />
+      </li>
+      <li>
+        <label for="lstname1">Last Names:</label>
+        <input id="lstname1" name="lstname1" type="text" required aria-required="true" />
+      </li>
+      <li>
+        <label for="degree1">Highest Academic Degree:</label>
+        <input id="degree1" name="degree1" type="text" />
+      </li>
+      <li>
+        <label for="company1">Institution or Organization:</label>
+        <input id="company1" name="company1" type="text" />
+      </li>
+      <li>
+        <label for="telno1">Phone Number:</label>
+        <input id="telno1" name="telno1" type="tel" required aria-required="true" placeholder="555-555-5555" />
+      </li>
+      <li>
+        <label for="email1">E-mail:</label>
+        <input id="email1" name="email1" type="email" required aria-required="true" />
+      </li>
+    </ul>
+
+    <hr />
+
+    <fieldset>
+      <legend><strong>Have you presented at a national conference or taught a college-level, semester-long course? <span class="required-marker" aria-hidden="true">*</span></strong></legend>
+      <span>
+        <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" required aria-required="true" />
+        <label for="natconfexp1_yes">yes</label>
+      </span>
+      <span>
+        <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" />
+        <label for="natconfexp1_no">no</label>
+      </span>
+    </fieldset>
+
+    <div class="suggest_form">
+      <label for="Speaker1bio"><strong>Presenter 1 bio&nbsp;</strong>(1500 characters maximum)</label>
+      <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4" maxlength="1500"></textarea>
+    </div>
+
+    <h2 class="outline4">Proposal Information</h2>
+
+    <fieldset>
+      <legend><strong>Title of Proposal <span class="required-marker" aria-hidden="true">*</span></strong> (150 characters maximum)</legend>
+      <ul>
+        <li>
+          <label for="proptitle">Proposal Title:</label>
+          <input id="proptitle" name="proptitle" type="text" required aria-required="true" maxlength="150" />
+        </li>
+      </ul>
+    </fieldset>
+
+    <input type="submit" value="Submit your proposal" />
+
+  </form>
+
+</main>
+
+</body>
+</html>
